@@ -1,4 +1,76 @@
 /* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s, background-color 0.3s;
+}
+
+.main-header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.main-header a:hover {
+    background-color: #ff8360;
+    color: #fff;
+}
+
+.container {
+    padding-top: 80px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-top: 2px solid #ff5e62;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.text-muted {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#mode-toggle:hover {
+    background-color: #e95931;
+}
 
 
 .whatsapp-icono {
@@ -41,86 +113,30 @@
     }
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
-    color: #333;
-    margin: 0;
-    padding: 0;
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+.footer a{
+    color: #000000;
 }
 
-.main-header {
-    background-color: #ff6f61;
-    color: #ffffff;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: top 0.3s, background-color 0.3s;
-}
-
-.main-header a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 12px 20px;
-    margin: 0 5px;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 4px;
-}
-
-.main-header a:hover {
-    background-color: #ff8360;
+.footer .oscurecer a {
     color: #fff;
 }
-
-.container {
-    padding-top: 80px;
-    /* Ajuste para el header fijo */
+.oscurecer a:hover{
+    color: rgb(0, 0, 0);
 }
 
-.section-title {
-    font-size: 2.5rem;
-    color: black;
-    margin-bottom: 20px;
-}
 
-hr {
-    border-top: 2px solid #ff5e62;
-    margin-bottom: 30px;
-}
 
-.lead {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #000000;
-}
-
-.text-muted {
-    color: #000000;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#mode-toggle:hover {
-    background-color: #e95931;
-}
 
 /* Estilos específicos de la página de contacto */
 .contact-form {
-    background: linear-gradient(135deg, #ffffff 0%, #a57374 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -200,7 +216,7 @@ body.dark-mode {
 
 /* Modo oscuro para header */
 body.dark-mode .main-header {
-    background-color: #1a252f;
+    background-color: #212529;
 }
 
 .main-header a {
@@ -250,4 +266,41 @@ body.dark-mode #mode-toggle {
 .container {
     padding-top: 80px;
     /* Ajuste para el header fijo */
+}
+
+.dark-mode .form-control {
+    background-color: #555;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+/* contacto dark */
+
+.dark-mode .contact-form {
+    background: linear-gradient(135deg, #474747 0%, #050505 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dark-mode .footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .oscurecer a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .footer a {
+    color: #ffffff;
+}
+
+.dark-mode footer .titulos{
+    color: #fff;
+}
+.dark-mode footer .derechos{
+    color: #929292;
 }
