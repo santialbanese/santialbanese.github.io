@@ -1,0 +1,207 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s, background-color 0.3s;
+}
+
+.main-header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.main-header a:hover {
+    background-color: #ff8360;
+    color: #fff;
+}
+
+.container {
+    padding-top: 80px; /* Ajuste para el header fijo */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-top: 2px solid #ff5e62;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000000; 
+}
+.text-muted{
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#mode-toggle:hover {
+    background-color: #e95931;
+}
+
+/* Estilos específicos de la página de contacto */
+.contact-form {
+    background: linear-gradient(135deg, #ffffff 0%, #a57374 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff5e62;
+}
+
+/* Scripts de interacción */
+.hidden {
+    top: -80px;
+    background-color: rgba(0, 0, 0, 0.8); /* Se oscurece al ocultarse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modo oscuro */
+body.dark-mode {
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    color: #f8f9fa;
+}
+
+.dark-mode .main-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s, background-color 0.3s;
+}
+
+.dark-mode hr {
+    border-top: 2px solid #1a252f;
+    margin-bottom: 30px;
+}
+
+/* Modo oscuro para header */
+body.dark-mode .main-header {
+    background-color: #1a252f;
+}
+
+.main-header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.dark-mode .main-header a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+/* Estilos del botón de modo oscuro/claro */
+#mode-toggle {
+    background-color: #ff8360;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode #mode-toggle:hover {
+    background-color: #2c3e51;
+}
+
+/* Modo oscuro para botón */
+body.dark-mode #mode-toggle {
+    background-color: #3b3f4a;
+}
+
+.dark-mode .contact-form {
+    background: linear-gradient(135deg, #ffffff 0%, #2c3e50 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    padding-top: 80px; /* Ajuste para el header fijo */
+}
