@@ -329,26 +329,5 @@ body.dark-mode #mode-toggle {
     .paginas {
         display: none;
     }
-    .clase-img{
-        text-align: center;
-        width: 500px;
-        height: 500px;
-    }
-}
-
-@media (max-width: 500px) {
-    .clase-img{
-        text-align: center;
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .clase-img{
-        text-align: center;
-        width: 300px;
-        height: 300px;
-    }
+  
 }
