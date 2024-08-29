@@ -9,6 +9,7 @@ body {
 
 
 .main-header {
+    z-index: 1050;
     background-color: #212529;
     color: #ffffff;
     padding: 15px 0;
@@ -16,12 +17,13 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 2500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: top 0.3s, background-color 0.3s;
 }
 
 .main-header a {
+
     color: #ffffff;
     text-decoration: none;
     padding: 12px 20px;
@@ -279,15 +281,15 @@ body.dark-mode {
 
 
 .clock-fixed {
-    position: fixed; /* Fija el reloj en la pantalla */
-    top: 17%; /* Ajusta la distancia desde la parte superior de la pantalla */
-    right: 10px; /* Ajusta la distancia desde el borde derecho de la pantalla */
-    background: #000000; /* Fondo blanco para que resalte, ajusta según tu diseño */
-    border: 2px solid #333; /* Bordes del reloj, ajusta el color según tu diseño */
-    padding: 10px; /* Espaciado interno para que el reloj no esté pegado a los bordes */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
-    z-index: 9999; /* Asegura que el reloj esté por encima de otros elementos */
+    position: fixed; 
+    top: 17%;
+    right: 10px;
+    background: #000000;
+    border: 2px solid #333; 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 2000;
     letter-spacing: 2px;
     color: #fff;
     border: #000000;
