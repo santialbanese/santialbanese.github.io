@@ -17,12 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
 
-var map = L.map('map').setView([-35.1000, -57.8945], 10);
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('clock').textContent = timeString;
+}
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([-34.9214, -57.9545]).addTo(map)
-    .bindPopup('La Plata');
+setInterval(updateClock, 1000);
+updateClock();
