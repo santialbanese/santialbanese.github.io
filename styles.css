@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    background: linear-gradient(135deg, #8ee2cd 0%, #53c9ab 100%);
     color: #333;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ body {
 }
 
 .main-header a:hover {
-    background-color: #ff8360;
+    background-color: #53c9ab;
     color: #fff;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 hr {
-    border-top: 2px solid #ff5e62;
+    border-top: 2px solid #53c9ab;
     margin-bottom: 30px;
 }
 
@@ -69,7 +69,7 @@ img {
 }
 
 #mode-toggle:hover {
-    background-color: #e95931;
+    background-color: #238a70;
 }
 
 
@@ -159,7 +159,7 @@ img {
 }
 
 .contact-form button {
-    background-color: #ff6f61;
+    background-color: #53c9ab;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -169,7 +169,7 @@ img {
 }
 
 .contact-form button:hover {
-    background-color: #ff5e62;
+    background-color: #53c9ab;
 }
 
 /* Scripts de interacción */
@@ -236,7 +236,7 @@ body.dark-mode .main-header {
 
 /* Estilos del botón de modo oscuro/claro */
 #mode-toggle {
-    background-color: #ff8360;
+    background-color: #53c9ab;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -263,6 +263,13 @@ body.dark-mode #mode-toggle {
     margin: 0 auto;
 }
 
+.dark-mode .lead{
+    color: #fff;
+}
+.dark-mode .text-muted{
+    color: #fff;
+}
+
 .container {
     padding-top: 80px;
     /* Ajuste para el header fijo */
@@ -275,6 +282,13 @@ body.dark-mode #mode-toggle {
 }
 
 /* contacto dark */
+.dark-mode .titles{
+    color: #fff;
+}
+
+.dark-mode .parrafo{
+    color: white;
+}
 
 .dark-mode .contact-form {
     background: linear-gradient(135deg, #474747 0%, #050505 100%);
@@ -284,6 +298,11 @@ body.dark-mode #mode-toggle {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.dark-mode .btn-contact{
+    background-color: #2c3e50;
+}
+
 
 .dark-mode .footer {
     background-color: #333333;
@@ -303,4 +322,33 @@ body.dark-mode #mode-toggle {
 }
 .dark-mode footer .derechos{
     color: #929292;
+}
+
+
+@media (max-width: 600px) {
+    .paginas {
+        display: none;
+    }
+    .clase-img{
+        text-align: center;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .clase-img{
+        text-align: center;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .clase-img{
+        text-align: center;
+        width: 300px;
+        height: 300px;
+    }
 }
