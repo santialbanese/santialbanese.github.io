@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
             theme = "dark";
         }
         localStorage.setItem("theme", theme);
+
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+            toggle: false
+        });
+        bsCollapse.hide();
     });
 });
 
