@@ -263,6 +263,7 @@ body.dark-mode {
 #map { 
     height: 1000px; 
     width: 100%;
+    position: relative;
 }
 .leaflet-control-zoom {
     top: 600px; /* Ajusta la distancia desde el borde superior */
